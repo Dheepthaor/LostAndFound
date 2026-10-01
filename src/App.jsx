@@ -10,7 +10,7 @@ import ReportFoundItem from "./pages/ReportFoundItem";
 import ItemDetails from "./pages/ItemDetails";
 import MyReports from "./pages/MyReports";
 import MyClaims from "./pages/MyClaims";
-import AdminDashboard from "./pages/AdminDashboard";
+
 
 function App() {
   return (
@@ -70,10 +70,7 @@ function App() {
   path="/my-claims"
   element={<MyClaims />}
 />
-<Route
-  path="/admin-dashboard"
-  element={<AdminDashboard />}
-/>
+
 
         {/* Unknown URL → Login */}
         <Route
