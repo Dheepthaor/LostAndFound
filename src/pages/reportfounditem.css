@@ -1,0 +1,168 @@
+.found-report-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.found-report-sidebar {
+  width: 240px;
+  background: #ffffff;
+  padding: 25px 18px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.found-report-sidebar h2 {
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.found-report-sidebar a {
+  display: block;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #555;
+  border-radius: 8px;
+}
+
+.found-report-sidebar a:hover {
+  background: #eef3ff;
+  color: #3157d5;
+}
+
+/* Main area */
+.found-report-main {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+/* Header */
+.found-report-header {
+  margin-bottom: 25px;
+}
+
+.found-report-header h1 {
+  margin: 0;
+  color: #222;
+  font-size: 28px;
+}
+
+.found-report-header p {
+  margin-top: 8px;
+  color: #777;
+}
+
+/* Form card */
+.found-report-card {
+  max-width: 850px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Form */
+.found-report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.found-report-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: -10px;
+}
+
+.found-report-form input,
+.found-report-form select,
+.found-report-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d5d9e2;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.found-report-form input:focus,
+.found-report-form select:focus,
+.found-report-form textarea:focus {
+  border-color: #3157d5;
+}
+
+.found-report-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* Image upload */
+.found-report-form input[type="file"] {
+  padding: 10px;
+  background: #fafafa;
+}
+
+/* Buttons */
+.found-report-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.found-report-buttons button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.found-report-buttons button[type="submit"] {
+  background: #3157d5;
+  color: white;
+}
+
+.found-report-buttons button[type="submit"]:hover {
+  background: #2446b5;
+}
+
+.found-report-buttons button[type="button"] {
+  background: #e9ecf2;
+  color: #333;
+}
+
+.found-report-buttons button[type="button"]:hover {
+  background: #dce0e8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .found-report-page {
+    flex-direction: column;
+  }
+
+  .found-report-sidebar {
+    width: auto;
+  }
+
+  .found-report-main {
+    padding: 20px;
+  }
+
+  .found-report-card {
+    padding: 20px;
+  }
+}
+.found-report-sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.found-report-sidebar-bottom {
+  margin-top: auto;
+}

@@ -9,7 +9,9 @@ function Dashboard() {
       <aside className="dashboard-sidebar">
 
         <div className="dashboard-logo">
-          <div className="dashboard-logo-icon">🔍</div>
+          <div className="dashboard-logo-icon">
+            🔍
+          </div>
 
           <div>
             <h2>Lost &amp; Found</h2>
@@ -19,26 +21,78 @@ function Dashboard() {
 
         <nav className="dashboard-nav">
 
-          <Link to="/dashboard" className="dashboard-nav-item active">
+          <Link
+            to="/dashboard"
+            className="dashboard-nav-item active"
+          >
             <span>🏠</span>
             Dashboard
           </Link>
 
-          <Link to="/lost-items" className="dashboard-nav-item">
+          <Link
+            to="/lost-items"
+            className="dashboard-nav-item"
+          >
             <span>🔎</span>
             Lost Items
           </Link>
 
-          <Link to="/report-lost-item" className="dashboard-nav-item">
+          <Link
+            to="/found-items"
+            className="dashboard-nav-item"
+          >
+            <span>📦</span>
+            Found Items
+          </Link>
+
+          <Link
+            to="/item-details"
+            className="dashboard-nav-item"
+          >
+            <span>📄</span>
+            Item Details
+          </Link>
+
+          <Link
+            to="/my-reports"
+            className="dashboard-nav-item"
+          >
+            <span>📝</span>
+            My Reports
+          </Link>
+
+          <Link
+            to="/my-claims"
+            className="dashboard-nav-item"
+          >
+            <span>✓</span>
+            My Claims
+          </Link>
+
+          <Link
+            to="/report-lost-item"
+            className="dashboard-nav-item"
+          >
             <span>📝</span>
             Report Lost Item
+          </Link>
+
+          <Link
+            to="/report-found-item"
+            className="dashboard-nav-item"
+          >
+            <span>📦</span>
+            Report Found Item
           </Link>
 
         </nav>
 
         <div className="dashboard-sidebar-bottom">
 
-          <Link to="/" className="dashboard-logout">
+          <Link
+            to="/"
+            className="dashboard-logout"
+          >
             <span>🚪</span>
             Logout
           </Link>
@@ -56,10 +110,14 @@ function Dashboard() {
 
           <div>
             <h1>Dashboard</h1>
-            <p>Welcome back! Here's what's happening with your lost items.</p>
+
+            <p>
+              Welcome back! Here's what's happening with your lost items.
+            </p>
           </div>
 
           <div className="dashboard-user">
+
             <div className="dashboard-avatar">
               👤
             </div>
@@ -68,6 +126,7 @@ function Dashboard() {
               <strong>User</strong>
               <span>Welcome back</span>
             </div>
+
           </div>
 
         </header>
@@ -77,6 +136,7 @@ function Dashboard() {
         <section className="dashboard-stats">
 
           <div className="dashboard-card">
+
             <div className="dashboard-card-icon blue">
               🔍
             </div>
@@ -85,10 +145,12 @@ function Dashboard() {
               <span>Total Lost Items</span>
               <h3>12</h3>
             </div>
+
           </div>
 
 
           <div className="dashboard-card">
+
             <div className="dashboard-card-icon orange">
               ⏳
             </div>
@@ -97,10 +159,12 @@ function Dashboard() {
               <span>Pending Claims</span>
               <h3>5</h3>
             </div>
+
           </div>
 
 
           <div className="dashboard-card">
+
             <div className="dashboard-card-icon green">
               ✓
             </div>
@@ -109,6 +173,7 @@ function Dashboard() {
               <span>Items Recovered</span>
               <h3>7</h3>
             </div>
+
           </div>
 
         </section>
@@ -118,10 +183,15 @@ function Dashboard() {
         <section className="dashboard-section">
 
           <div className="dashboard-section-title">
+
             <div>
               <h2>Quick Actions</h2>
-              <p>Manage your lost and found items</p>
+
+              <p>
+                Manage your lost and found items
+              </p>
             </div>
+
           </div>
 
 
@@ -131,18 +201,47 @@ function Dashboard() {
               to="/report-lost-item"
               className="dashboard-action-card"
             >
+
               <div className="action-icon purple">
                 📝
               </div>
 
               <div>
                 <h3>Report Lost Item</h3>
+
                 <p>
                   Report an item you have lost.
                 </p>
               </div>
 
-              <span className="action-arrow">→</span>
+              <span className="action-arrow">
+                →
+              </span>
+
+            </Link>
+
+
+            <Link
+              to="/report-found-item"
+              className="dashboard-action-card"
+            >
+
+              <div className="action-icon green">
+                📦
+              </div>
+
+              <div>
+                <h3>Report Found Item</h3>
+
+                <p>
+                  Report an item you have found.
+                </p>
+              </div>
+
+              <span className="action-arrow">
+                →
+              </span>
+
             </Link>
 
 
@@ -150,18 +249,95 @@ function Dashboard() {
               to="/lost-items"
               className="dashboard-action-card"
             >
+
               <div className="action-icon blue">
                 🔎
               </div>
 
               <div>
                 <h3>Browse Lost Items</h3>
+
                 <p>
                   Search through reported items.
                 </p>
               </div>
 
-              <span className="action-arrow">→</span>
+              <span className="action-arrow">
+                →
+              </span>
+
+            </Link>
+
+
+            <Link
+              to="/found-items"
+              className="dashboard-action-card"
+            >
+
+              <div className="action-icon green">
+                📦
+              </div>
+
+              <div>
+                <h3>Browse Found Items</h3>
+
+                <p>
+                  Search through reported found items.
+                </p>
+              </div>
+
+              <span className="action-arrow">
+                →
+              </span>
+
+            </Link>
+
+
+            <Link
+              to="/item-details"
+              className="dashboard-action-card"
+            >
+
+              <div className="action-icon purple">
+                📄
+              </div>
+
+              <div>
+                <h3>Item Details</h3>
+
+                <p>
+                  View detailed information about an item.
+                </p>
+              </div>
+
+              <span className="action-arrow">
+                →
+              </span>
+
+            </Link>
+
+
+            <Link
+              to="/my-claims"
+              className="dashboard-action-card"
+            >
+
+              <div className="action-icon green">
+                ✓
+              </div>
+
+              <div>
+                <h3>My Claims</h3>
+
+                <p>
+                  View and manage your item claims.
+                </p>
+              </div>
+
+              <span className="action-arrow">
+                →
+              </span>
+
             </Link>
 
           </div>
@@ -176,7 +352,10 @@ function Dashboard() {
 
             <div>
               <h2>Recent Lost Items</h2>
-              <p>Your recently reported items</p>
+
+              <p>
+                Your recently reported items
+              </p>
             </div>
 
             <Link to="/lost-items">
@@ -195,8 +374,15 @@ function Dashboard() {
               </div>
 
               <div className="recent-item-info">
-                <h3>Black Backpack</h3>
-                <p>Reported 2 days ago</p>
+
+                <h3>
+                  Black Backpack
+                </h3>
+
+                <p>
+                  Reported 2 days ago
+                </p>
+
               </div>
 
               <span className="status pending">
@@ -213,8 +399,15 @@ function Dashboard() {
               </div>
 
               <div className="recent-item-info">
-                <h3>Mobile Phone</h3>
-                <p>Reported 5 days ago</p>
+
+                <h3>
+                  Mobile Phone
+                </h3>
+
+                <p>
+                  Reported 5 days ago
+                </p>
+
               </div>
 
               <span className="status recovered">
@@ -231,8 +424,15 @@ function Dashboard() {
               </div>
 
               <div className="recent-item-info">
-                <h3>Wireless Headphones</h3>
-                <p>Reported 1 week ago</p>
+
+                <h3>
+                  Wireless Headphones
+                </h3>
+
+                <p>
+                  Reported 1 week ago
+                </p>
+
               </div>
 
               <span className="status pending">
