@@ -1,0 +1,602 @@
+/* =========================================================
+   REPORT LOST ITEM
+========================================================= */
+
+.report-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #f6f8fc;
+
+  color: #1e2b4a;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.report-sidebar {
+  width: 250px;
+
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  border-right: 1px solid #e6eaf1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 28px 18px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.report-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 5px 8px 30px;
+}
+
+
+.report-logo-icon {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 8px;
+
+  background: #4965e8;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+
+.report-logo h2 {
+  margin: 0;
+
+  color: #172b66;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+
+.report-logo span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #8a94a7;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.report-nav {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.report-nav-item {
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 0 13px;
+
+  border-radius: 7px;
+
+  color: #68748a;
+
+  text-decoration: none;
+
+  font-size: 16px;
+}
+
+
+.report-nav-item span {
+  width: 23px;
+
+  text-align: center;
+
+  font-size: 19px;
+}
+
+
+.report-nav-item:hover {
+  background: #f1f4ff;
+
+  color: #3e5fe5;
+}
+
+
+.report-nav-item.active {
+  background: #eef2ff;
+
+  color: #3d5fea;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.report-sidebar-bottom {
+  margin-top: auto;
+}
+
+
+.report-logout {
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 0 13px;
+
+  color: #68748a;
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  border-radius: 7px;
+}
+
+
+.report-logout:hover {
+  background: #fff2f2;
+
+  color: #e05252;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.report-main {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 35px 45px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.report-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+
+.report-header h1 {
+  margin: 0;
+
+  color: #172b66;
+
+  font-size: 34px;
+
+  font-weight: 700;
+}
+
+
+.report-header p {
+  margin-top: 8px;
+
+  color: #8791a4;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.report-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+}
+
+
+.report-avatar {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  background: #e8edff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 21px;
+}
+
+
+.report-user strong {
+  display: block;
+
+  color: #283653;
+
+  font-size: 16px;
+}
+
+
+.report-user span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #929bad;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.report-card {
+  background: #ffffff;
+
+  border: 1px solid #e3e8f0;
+
+  border-radius: 10px;
+
+  padding: 28px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.report-form {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 22px;
+
+  row-gap: 19px;
+}
+
+
+/* =========================================================
+   FIELD
+========================================================= */
+
+.report-field {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.report-field label {
+  margin-bottom: 8px;
+
+  color: #3f4d67;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+.report-field input,
+.report-field select {
+  width: 100%;
+
+  height: 48px;
+
+  padding: 0 13px;
+
+  border: 1px solid #dce2eb;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #667187;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+
+.report-field input::placeholder {
+  color: #a5aebe;
+}
+
+
+.report-field input:focus,
+.report-field select:focus,
+.report-field textarea:focus {
+  border-color: #4d5eea;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.report-description {
+  grid-column: 1 / 3;
+}
+
+
+.report-field textarea {
+  width: 100%;
+
+  height: 95px;
+
+  padding: 13px;
+
+  border: 1px solid #dce2eb;
+
+  border-radius: 6px;
+
+  resize: vertical;
+
+  background: #ffffff;
+
+  color: #667187;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+
+.report-field textarea::placeholder {
+  color: #a5aebe;
+}
+
+
+/* =========================================================
+   FILE INPUT
+========================================================= */
+
+.report-field input[type="file"] {
+  padding: 8px;
+
+  color: #7b8495;
+}
+
+
+/* =========================================================
+   IMAGE BOX
+========================================================= */
+
+.report-image-box {
+  min-height: 140px;
+
+  border: 1px dashed #d6dce7;
+
+  border-radius: 7px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #8a94a7;
+}
+
+
+.report-image-icon {
+  font-size: 31px;
+
+  margin-bottom: 8px;
+}
+
+
+.report-image-box p {
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.report-buttons {
+  grid-column: 1 / 3;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 5px;
+}
+
+
+.cancel-button,
+.submit-button {
+  height: 45px;
+
+  padding: 0 24px;
+
+  border-radius: 6px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.cancel-button {
+  border: 1px solid #dce2eb;
+
+  background: #ffffff;
+
+  color: #68748a;
+}
+
+
+.cancel-button:hover {
+  background: #f5f7fa;
+}
+
+
+.submit-button {
+  border: none;
+
+  background: #3d5fea;
+
+  color: #ffffff;
+}
+
+
+.submit-button:hover {
+  background: #304ed0;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .report-sidebar {
+    width: 220px;
+  }
+
+  .report-main {
+    padding: 30px;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .report-page {
+    flex-direction: column;
+  }
+
+  .report-sidebar {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 15px;
+  }
+
+  .report-logo {
+    padding-bottom: 15px;
+  }
+
+  .report-nav {
+    flex-direction: row;
+
+    overflow-x: auto;
+  }
+
+  .report-nav-item {
+    flex: 1;
+
+    justify-content: center;
+
+    white-space: nowrap;
+  }
+
+  .report-main {
+    padding: 20px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .report-form {
+    grid-template-columns: 1fr;
+  }
+
+  .report-description {
+    grid-column: 1;
+  }
+
+  .report-buttons {
+    grid-column: 1;
+
+    justify-content: stretch;
+  }
+
+  .cancel-button,
+  .submit-button {
+    flex: 1;
+  }
+
+}

@@ -1,0 +1,421 @@
+/* =========================================================
+   REGISTRATION PAGE
+========================================================= */
+
+.register-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.register-left {
+  width: 50%;
+  min-height: 100vh;
+
+  background: #f1f7ff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  padding-top: 70px;
+
+  color: #172b66;
+}
+
+
+/* Logo Icon */
+
+.register-icon {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 8px;
+
+  background: #3d6bea;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 21px;
+
+  margin-bottom: 25px;
+}
+
+
+/* Lost & Found Heading */
+
+.register-left h1 {
+  margin: 0;
+
+  color: #172b66;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* Description */
+
+.register-left p {
+  margin-top: 25px;
+
+  color: #607695;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   ILLUSTRATION
+========================================================= */
+
+.register-illustration {
+  position: relative;
+
+  width: 210px;
+  height: 165px;
+
+  margin-top: 55px;
+
+  border-radius: 50%;
+
+  background: #dceaff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Search Circle */
+
+.register-circle {
+  position: absolute;
+
+  top: 27px;
+  left: 71px;
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 34px;
+
+  color: #2f5bea;
+}
+
+
+/* Box */
+
+.register-box {
+  position: absolute;
+
+  bottom: 30px;
+  left: 42px;
+
+  width: 60px;
+  height: 46px;
+
+  border-radius: 7px;
+
+  background: #263f9a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+
+/* Lock */
+
+.register-lock {
+  position: absolute;
+
+  right: 32px;
+  bottom: 29px;
+
+  width: 42px;
+  height: 50px;
+
+  border-radius: 7px;
+
+  background: #4d5ed7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 21px;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.register-right {
+  width: 50%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+}
+
+
+/* Form Container */
+
+.register-form {
+  width: 430px;
+
+  padding: 30px 0;
+}
+
+
+/* Heading */
+
+.register-form h2 {
+  margin: 0;
+
+  color: #16274e;
+
+  font-size: 26px;
+
+  font-weight: 700;
+}
+
+
+/* Subtitle */
+
+.register-subtitle {
+  margin: 8px 0 20px;
+
+  color: #7c8799;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.register-group {
+  margin-bottom: 12px;
+}
+
+
+/* Labels */
+
+.register-group label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #42506a;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.register-input {
+  width: 100%;
+
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #d8dee8;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+}
+
+
+/* Input Icon */
+
+.register-input span {
+  width: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+
+  color: #718096;
+}
+
+
+/* Input Field */
+
+.register-input input {
+  flex: 1;
+
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  color: #273142;
+}
+
+
+/* Placeholder */
+
+.register-input input::placeholder {
+  color: #a6afbd;
+}
+
+
+/* Input Focus */
+
+.register-input:focus-within {
+  border-color: #4d5eea;
+}
+
+
+/* =========================================================
+   REGISTER BUTTON
+========================================================= */
+
+.register-submit {
+  width: 100%;
+
+  height: 38px;
+
+  margin-top: 8px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: linear-gradient(
+    90deg,
+    #3d5fea,
+    #6848e8
+  );
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.register-submit:hover {
+  opacity: 0.92;
+}
+
+
+/* =========================================================
+   LOGIN LINK
+========================================================= */
+
+.register-login {
+  margin-top: 15px;
+
+  text-align: center;
+
+  color: #8993a3;
+
+  font-size: 12px;
+}
+
+
+.register-login a {
+  color: #315bea;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+
+.register-login a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+  .register-page {
+    flex-direction: column;
+
+    overflow: auto;
+  }
+
+
+  .register-left {
+    width: 100%;
+
+    min-height: 430px;
+
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+
+  .register-right {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 40px 20px;
+  }
+
+
+  .register-form {
+    width: 100%;
+
+    max-width: 430px;
+  }
+
+}
